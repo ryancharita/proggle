@@ -1,0 +1,17 @@
+.centeredLayout {
+  @apply flex
+    w-full
+    min-w-0
+    min-h-screen
+    items-center
+    justify-center
+    px-4
+    py-14
+    md:px-14
+    lg:px-28;
+
+  /* main {
+    @apply items-center
+      justify-center;
+  } */
+}

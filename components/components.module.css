@@ -1,0 +1,62 @@
+.defaultDisplayBox {
+  @apply w-20
+  h-20
+  border-2
+  border-border
+  text-white
+  font-mono
+  text-3xl
+  m-1
+  items-center
+  justify-center
+  flex
+  uppercase;
+}
+
+.filledDisplayBox {
+  @apply w-20
+  h-20
+  border-2
+  border-border
+  text-white
+  font-mono
+  text-3xl
+  m-1
+  items-center
+  justify-center
+  flex
+  bg-border
+  uppercase;
+}
+
+.correctDisplayBox {
+  @apply w-20
+  h-20
+  border-2
+  border-check-color
+  text-white
+  font-mono
+  text-3xl
+  m-1
+  items-center
+  justify-center
+  flex
+  bg-check-color
+  uppercase;
+}
+
+.partialDisplayBox {
+  @apply w-20
+  h-20
+  border-2
+  border-partial-color
+  text-white
+  font-mono
+  text-3xl
+  m-1
+  items-center
+  justify-center
+  flex
+  bg-partial-color
+  uppercase;
+}
