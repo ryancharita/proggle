@@ -72,7 +72,7 @@ export default function Home() {
       setWordOfTheDay(wod?.[0]?.words?.value || '');
     };
     initialize();
-  }, []);
+  }, [setWordOfTheDay]);
 
   return (
     <main>
