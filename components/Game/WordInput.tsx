@@ -30,7 +30,7 @@ const WordInput: FC<WordInputProps> = ({ index, wordArray }) => {
   };
 
   return (
-    <div className="flex text-white">
+    <div className="flex">
       {wordArray.map((letter, letterIndex) => (
         <LetterBox key={letterIndex} intent={getIntent(letter, letterIndex)}>
           {letter}

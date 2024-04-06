@@ -2,9 +2,7 @@
   @apply w-20
   h-20
   border-2
-  border-border
-  text-white
-  font-mono
+  font-extrabold
   text-3xl
   m-1
   items-center
@@ -17,15 +15,13 @@
   @apply w-20
   h-20
   border-2
-  border-border
-  text-white
-  font-mono
+  font-extrabold
   text-3xl
   m-1
   items-center
   justify-center
   flex
-  bg-border
+  bg-neutral-500
   uppercase;
 }
 
@@ -33,15 +29,14 @@
   @apply w-20
   h-20
   border-2
-  border-check-color
-  text-white
-  font-mono
+  border-green-500
+  font-extrabold
   text-3xl
   m-1
   items-center
   justify-center
   flex
-  bg-check-color
+  bg-green-500
   uppercase;
 }
 
@@ -49,14 +44,13 @@
   @apply w-20
   h-20
   border-2
-  border-partial-color
-  text-white
-  font-mono
+  border-warning-400
+  font-extrabold
   text-3xl
   m-1
   items-center
   justify-center
   flex
-  bg-partial-color
+  bg-warning-400
   uppercase;
 }

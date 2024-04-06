@@ -1,10 +1,17 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import CenteredLayout from '@/layouts/Centered';
-import { getWOD } from '@/lib/wod';
+import { ClerkProvider } from '@clerk/nextjs';
+import { Inter as FontSans } from 'next/font/google';
+import { cn } from '@/lib/utils';
+import { ThemeProvider } from '@/components/theme-provider';
 
-const inter = Inter({ subsets: ['latin'] });
+const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
+
+// const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,10 +20,12 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <CenteredLayout>{children}</CenteredLayout>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>{children}</body>
+        </ThemeProvider>
+      </html>
+    </ClerkProvider>
   );
 }

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import styles from './components.module.css';
+import styles from './index.module.css';
 import { cva, VariantProps } from 'class-variance-authority';
 
 const displayBox = cva('displayBox', {

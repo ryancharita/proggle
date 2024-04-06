@@ -1,5 +1,5 @@
 'use server';
-import { generateWOD } from '@/lib/wod';
+import { generateWOD } from '@/lib/actions/word-of-the-day';
 
 const ListOfWords = async () => {
   async function chooseWOD() {
