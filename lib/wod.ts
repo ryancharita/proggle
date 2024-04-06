@@ -8,7 +8,6 @@ export const generateWOD = async () => {
       .from('word_of_day')
       .select('id')
       .eq('created_at', moment().utc().format('YYYY-MM-DD'));
-    console.log(wodList.data?.length === 0);
 
     if (wodList.data?.length === 0) {
       const list = await supabase.from('words').select('id').eq('available', true);
@@ -21,8 +20,7 @@ export const generateWOD = async () => {
         const newWOD = await supabase.from('words').update({ available: false }).eq('id', WOD?.id).select();
         return newWOD;
       }
-      console.log('here', num, list?.data?.[num]);
-      return [WOD];
+      return WOD;
     }
     return wodList;
   } catch (error) {

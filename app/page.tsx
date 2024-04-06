@@ -11,7 +11,7 @@ export default function Home() {
     (input: string) => {
       if (input === wordOfTheDay.toLocaleUpperCase()) {
         setGameOver(true);
-        alert(`the Word Of th day is ${wordOfTheDay.toLocaleUpperCase()}`);
+        // alert(`the Word Of th day is ${wordOfTheDay.toLocaleUpperCase()}`);
         return;
       }
       if (currentIndex === 5) {
