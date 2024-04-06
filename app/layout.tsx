@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { ClerkProvider } from '@clerk/nextjs';
 import { Inter as FontSans } from 'next/font/google';
-import { cn } from '@/lib/utils';
+import { cn } from '@/data/utils';
 import { ThemeProvider } from '@/components/theme-provider';
 
 const fontSans = FontSans({

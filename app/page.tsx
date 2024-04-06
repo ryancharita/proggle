@@ -1,7 +1,7 @@
 import { auth } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
 
-export default () => {
+const Guard = () => {
   const { userId } = auth();
 
   if (userId) {
@@ -10,3 +10,5 @@ export default () => {
 
   return redirect('/about');
 };
+
+export default Guard;

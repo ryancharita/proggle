@@ -1,6 +1,6 @@
 'use client';
 import WordInput from '@/components/Game/WordInput';
-import { getWOD } from '@/lib/data/word-of-the-day';
+import { getWOD } from '@/data/data/word-of-the-day';
 import { useStore } from '@/store/app.store';
 import { useCallback, useEffect } from 'react';
 

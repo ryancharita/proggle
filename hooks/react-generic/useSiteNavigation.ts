@@ -3,7 +3,7 @@
 import type { HTMLAttributeAnchorTarget } from 'react';
 
 import siteNavigation from '@/navigation.json';
-import type { FormattedMessage, NavigationEntry, NavigationKeys } from '@/types';
+import type { FormattedMessage, NavigationEntry } from '@/types';
 
 // type Context = Record<string, RichTranslationValues>;
 type Navigation = Record<string, NavigationEntry>;
